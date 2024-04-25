@@ -159,3 +159,5 @@ class Dev(Configuration):
 
         OMDB_KEY = "48f2451a"
         CELERY_RESULT_BACKEND = "django-db"
+        EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+        ADMINS = [("Ben", "ben@example.com")]
