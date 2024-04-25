@@ -47,7 +47,8 @@ class Dev(Configuration):
             'django.contrib.messages',
             'django.contrib.staticfiles',
             'movies',
-            'gh'
+            'gh',
+            'django_celery_results'
         ]
 
         MIDDLEWARE = [
@@ -157,7 +158,4 @@ class Dev(Configuration):
         }
 
         OMDB_KEY = "48f2451a"
-
-
-
-
+        CELERY_RESULT_BACKEND = "django-db"
